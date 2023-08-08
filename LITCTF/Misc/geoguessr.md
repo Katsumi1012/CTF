@@ -1,4 +1,4 @@
-![findres](https://github.com/Katsumi1012/CTF/assets/108376735/cf7a0ef5-c4ad-443f-bebf-a4484ded36c1)# Challenge:
+# Challenge:
 Where am I? The flag is LITCTF{latitude,longitude} rounded to the third decimal place. (Example: LITCTF{42.444,-71.230})
 
 # Solution:
