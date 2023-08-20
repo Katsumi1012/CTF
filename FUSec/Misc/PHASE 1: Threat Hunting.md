@@ -10,7 +10,7 @@ author: EaZyq
 ![image](https://github.com/Katsumi1012/CTF/assets/108376735/58c2a5ce-45a3-491b-8dcc-cc293a27a8be)
 
 Có thể thấy được sau khi được khởi động thì có rất nhiều chương trình được khởi động cùng, làm mình nghĩ tới liệu malware có Persistence giống như các chương trình này không?
-Truy ngược qua các đường dẫn thư mục tới đường dẫn Registry theo tài liệu MITRE ATT&CK về Persistence: https://attack.mitre.org/tactics/TA0003/ để tìm thư mục chứa các chương trình nhằm mục đích autorun, tìm thấy thư mục tại đường dẫn `C:\Users\hunter\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
+Truy ngược từ các đường dẫn thư mục cho tới các đường dẫn Registry theo tài liệu MITRE ATT&CK về Persistence: https://attack.mitre.org/tactics/TA0003/ để tìm thư mục chứa các chương trình nhằm mục đích autorun, tìm thấy thư mục tại đường dẫn `C:\Users\hunter\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`:
 ![image](https://github.com/Katsumi1012/CTF/assets/108376735/b0e7aa1a-8aec-4fe9-940f-1fb24de6edf7)
 
 Trong các chương trình được liệt kê thì có file `.mp4` khá đáng nghi vì mặc dù nằm trong đường dẫn nhưng lại không được kích hoạt khi máy được khởi động, mình kiểm tra thử bằng VirusTotal thì file này được xác minh là không độc hại:
